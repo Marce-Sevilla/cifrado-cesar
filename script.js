@@ -2,4 +2,17 @@ const alfabeto = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","Ñ","
 const inputOriginal = document.getElementById('inputOriginal');
 const resultado = document.getElementById('resultado');
 const cifrador = document.getElementById('cifrador');
-const rango = document.getElementById('rango')
+const rango = document.getElementById('rango');
+
+const shifMessage = () => {
+    const wordArray = [...inputOriginal.value.toUpperCase()];
+    console.log(wordArray)
+};
+
+const submit = e => {
+    e.preventDefault();
+    resultado.innerHTML = '';
+    shifMessage();
+};
+
+cifrador.onsubmit = submit;
