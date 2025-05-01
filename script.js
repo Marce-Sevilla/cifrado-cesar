@@ -6,7 +6,12 @@ const rango = document.getElementById('rango');
 
 const shifMessage = () => {
     const wordArray = [...inputOriginal.value.toUpperCase()];
-    console.log(wordArray)
+    printChar(0,wordArray);
+};
+
+const printChar = (currentLetterIndex, wordArray) => {
+    if(wordArray.length === currentLetterIndex) return;
+    inputOriginal.value = inputOriginal.value.substring(1);
 };
 
 const submit = e => {

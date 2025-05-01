@@ -39,7 +39,7 @@ h1{
 }
 
 #inputOriginal{
-    margin: 10px 0px;
+    margin-top: 10px;
     padding: 10px;
     color: #FFF;
     border-top-right-radius: var(--borde-redondo);
@@ -50,10 +50,9 @@ h1{
     height: 20px;
     color: #00c9be;
     padding: 0 10px 10px;
-    border-top-right-radius: var(--borde-redondo);
-    border-top-left-radius: var(--borde-redondo);
-    margin: 10px 0px;
-    display: none;
+    border-bottom-right-radius: var(--borde-redondo);
+    border-bottom-left-radius: var(--borde-redondo);
+    margin-bottom: 10px;
 }
 
 .rango{
